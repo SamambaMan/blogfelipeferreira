@@ -3,7 +3,9 @@
 {% block title%}{{ artigo.Titulo }} - Felipe Ferreira{% endblock %}
 
 {% block extrameta %}
-
+<meta property="og:type" content="website" />
+<meta property="og:image" content="{{artigo.ImagemTopo.url}}" />
+<meta property="og:description" content="{{artigo.Conteudo|truncatewords:40}}" />
 {% endblock %}
 
 {% block content %}
