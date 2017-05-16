@@ -17,5 +17,6 @@ tests/.coverage
 build/
 tests/report/
 .DS_Store
-mapptvadmin/mapptvadmin/estaticos/
+static/
+media/
 
