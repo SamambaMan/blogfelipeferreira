@@ -45,4 +45,9 @@ def artigo(request, slugpagina, slugartigo):
     return render(request, 'blog/artigo.html',
                   {'menu':menu,
                    'artigo':itemartigo})
-                   
+
+def teste(request):
+    print request.body
+
+    return True
+    

@@ -17,11 +17,12 @@ from django.conf.urls import url
 from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
-from blog.views import index, pagina, artigo
+from blog.views import index, pagina, artigo, teste
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', index),
     url(r'^pags/(?P<slugpagina>[-\w]+)/$', pagina),
     url(r'^pags/(?P<slugpagina>[-\w]+)/(?P<slugartigo>[-\w]+)', artigo),
+    url(r'^teste/$', teste),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

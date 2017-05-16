@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    {% block extrameta %}
+    {% endblock %}
 
     <title>{% block title %}Felipe Ferreira{% endblock %}</title>
 
@@ -95,7 +97,19 @@
             $('.carousel').carousel({
                 interval: 5000 //changes the speed
             })
+            var myEvent = {'id': 'teste1', 'lero': 'teste2'};
+$.ajax({
+    url: '/teste/',
+    type: 'POST',
+    contentType: 'application/json; charset=utf-8',
+    data: myEvent,
+    dataType: 'json',
+    success: function(result) {
+        alert(result.Result);
+    }
+});
         </script>
+
 
 </body>
 
