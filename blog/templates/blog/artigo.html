@@ -26,6 +26,9 @@
             {% post_to_gplus %}
             {% post_to_linkedin "{{ artigo.Titulo }}" %}
         </div>
+        {% if rodapepagina %}
+            {{ rodapepagina|safe }}
+        {% endif %}
         <hr>
     </div>
 </div></div></div>

@@ -37,14 +37,20 @@ def pagina(request, slugpagina):
 
 
 def artigo(request, slugpagina, slugartigo):
+    from .models import Pagina
 
     menu = itensmenu()
 
     itemartigo = artigos_publicados().get(Pagina__Slug=slugpagina, Slug=slugartigo)
 
+    pagina = Pagina.objects.get(Slug=slugpagina)
+
+
+
     return render(request, 'blog/artigo.html',
                   {'menu':menu,
-                   'artigo':itemartigo})
+                   'artigo':itemartigo,
+                   'rodapepagina':pagina.RodapePagina})
 
 def teste(request):
     print request.body
