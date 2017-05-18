@@ -22,9 +22,15 @@
             {{artigo.Conteudo|safe}}
         </div>
         <div class="text-center">
-            {% post_to_facebook request.build_absolute_uri|urlencode link_text="<img src='/static/img/icons/48/Facebook.png' title='Compartilhar no Facebook'>" %}
-            {% post_to_gplus request.build_absolute_uri|urlencode link_text="<img src='/static/img/icons/48/Gplus.png' title='Compartilhar no G+'>" %}
-            {% post_to_linkedin "{{ artigo.Titulo }}" link_text="<img src='/static/img/icons/48/Linkedin.png' title='Compartilhar no Linkedin'>" %}
+            <a href="http://www.facebook.com/sharer/sharer.php?u={{request.build_absolute_uri|urlencode}}">
+                <img src='/static/img/icons/48/Facebook.png' title='Compartilhar no Facebook'>
+            </a> 
+            <a href="http://plus.google.com/share?url={{request.build_absolute_uri|urlencode}}">
+                <img src='/static/img/icons/48/Gplus.png' title='Compartilhar no G+'>
+            </a>
+            <a href="https://www.linkedin.com/shareArticle?mini=true&title={{ artigo.Titulo|urlencode }}&url={{request.build_absolute_uri|urlencode}}">
+                <img src='/static/img/icons/48/Linkedin.png' title='Compartilhar no Linkedin'>"
+            </a>
         </div>
         {% if rodapepagina %}
             {{ rodapepagina|safe }}
