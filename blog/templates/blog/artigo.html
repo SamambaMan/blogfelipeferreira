@@ -22,8 +22,8 @@
             {{artigo.Conteudo|safe}}
         </div>
         <div class="text-center">
-            {% post_to_facebook link_text="<img src='/static/img/icons/48/Facebook.png' title='Compartilhar no Facebook'>" %}
-            {% post_to_gplus link_text="<img src='/static/img/icons/48/Gplus.png' title='Compartilhar no G+'>" %}
+            {% post_to_facebook request.build_absolute_uri|urlencode link_text="<img src='/static/img/icons/48/Facebook.png' title='Compartilhar no Facebook'>" %}
+            {% post_to_gplus request.build_absolute_uri|urlencode link_text="<img src='/static/img/icons/48/Gplus.png' title='Compartilhar no G+'>" %}
             {% post_to_linkedin "{{ artigo.Titulo }}" link_text="<img src='/static/img/icons/48/Linkedin.png' title='Compartilhar no Linkedin'>" %}
         </div>
         {% if rodapepagina %}
