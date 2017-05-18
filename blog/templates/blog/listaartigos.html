@@ -11,7 +11,7 @@
                     <img class="img-responsive img-border img-left" 
                         src="{{ MEDIA_URL }}/{{artigo.ImagemTopo}}" alt=""> 
                     {% endif %}
-                    {% if artigo.Detalhar %}
+                    {% if artigo.Detalhavel %}
                         <hr class="visible-xs"> 
                         {{ artigo.Conteudo|safe|truncatewords_html:40}}
                         <div class="center">
