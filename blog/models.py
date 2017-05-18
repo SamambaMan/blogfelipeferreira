@@ -33,6 +33,7 @@ class Artigo(models.Model):
     ImagemTopo = models.FileField(blank=True, null=True)
     Conteudo = HTMLField(blank=True, null=True)
     Publicado = models.BooleanField(default=False)
+    Detalhavel = models.BooleanField(default=True)
 
     def save(self, *args, **kwargs):
         from datetime import datetime

@@ -53,6 +53,8 @@ TINYMCE_DEFAULT_CONFIG = {
     'height': 500,
     'width': 750,
     'resize': True,
+    'force_p_newlines' : False,
+    'forced_root_block' : '',
 }
 
 
@@ -143,5 +145,5 @@ MEDIA_URL = '/media/'
 
 
 STATICFILES_DIRS = (
-    '/home/samambaman/webapps/blogfelipeferreira/blogfelipeferreira/media/',
+    MEDIA_ROOT,
 )
