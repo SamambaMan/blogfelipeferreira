@@ -19,4 +19,5 @@ pyparsing==2.2.0
 pytz==2017.2
 singledispatch==3.4.0.3
 six==1.10.0
+sqlparse==0.2.3
 wrapt==1.10.11

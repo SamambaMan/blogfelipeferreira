@@ -11,7 +11,7 @@ def artigos_publicados():
 
 def itensmenu():
     from .models import Pagina
-    return Pagina.objects.filter(MostraMenu=True)
+    return Pagina.objects.filter(MostraMenu=True).order_by('order')
 
 def index(request):
 
