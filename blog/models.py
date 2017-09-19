@@ -1,15 +1,16 @@
 # -*- coding: utf-8 -*-
+"""Modelo de dados do site"""
 from __future__ import unicode_literals
 
 from django.db import models
 from tinymce.models import HTMLField
 from autoslug import AutoSlugField
+from ordered_model.models import OrderedModel
 
 
-# Create your models here.
-
-
-class Pagina(models.Model):
+class Pagina(OrderedModel):
+    """Página, entidade que irá guardar os atributos de cada
+    página navegavel do site"""
     Titulo = models.CharField(max_length=100)
     Slug = AutoSlugField(populate_from='Titulo', unique=True)
     NomeMenu = models.CharField(max_length=20)
@@ -19,6 +20,9 @@ class Pagina(models.Model):
     RodapePagina = HTMLField(blank=True, null=True)
     RodapeGeral = HTMLField(blank=True, null=True)
     Home = models.BooleanField(default=False)
+
+    class Meta(OrderedModel.Meta):
+        pass
 
     def __str__(self):
         if self:

@@ -2,10 +2,14 @@
 from __future__ import unicode_literals
 
 from django.contrib import admin
+from ordered_model.admin import OrderedModelAdmin
 
-from .models import *
+from .models import Pagina, Artigo
 
-admin.site.register(Pagina)
+class PaginaAdmin(OrderedModelAdmin):
+    """ModelAdmin das Páginas"""
+    list_display = ('Titulo', 'move_up_down_links')
+    ordering = ('order',)
+
+admin.site.register(Pagina, PaginaAdmin)
 admin.site.register(Artigo)
-
-# Register your models here.

@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'tinymce',
     'blog',
     'django_social_share',
+    'ordered_model',
 ]
 
 TINYMCE_DEFAULT_CONFIG = {
