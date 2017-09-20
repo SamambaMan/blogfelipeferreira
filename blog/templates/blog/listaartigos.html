@@ -15,7 +15,7 @@
                         <hr class="visible-xs"> 
                         {{ artigo.Conteudo|safe|truncatewords_html:40}}
                         <div class="center">
-                            <a href="/pags/{{artigo.Pagina.Slug}}/{{artigo.Slug}}" 
+                            <a href="{% url 'artigo' artigo.Pagina.Slug artigo.Slug %}" 
                                 class="btn btn-default btn-lg">Ler artigo completo</a>
                         </div>
                     {% else %}
