@@ -12,5 +12,5 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
-	migrations.RunSQL("update blog_pagina set `order` = id;"),
+	    #migrations.RunSQL("update blog_pagina set `order` = id;"),
     ]
