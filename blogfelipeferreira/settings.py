@@ -149,3 +149,11 @@ MEDIA_URL = '/media/'
 STATICFILES_DIRS = (
     MEDIA_ROOT,
 )
+
+if "AMBIENTE" in os.environ and os.environ["AMBIENTE"] == "heroku":
+    # Parametros para rodar no heroku
+    DATABASES = {
+        'default': dj_database_url.config()
+    }
+
+    ALLOWED_HOSTS = ['*']
