@@ -1,4 +1,4 @@
-from djano.db import models
+from django.db import models
 
 
 class PaginaManager(models.Manager):
@@ -13,4 +13,3 @@ class ArtigoManager(models.Manager):
     def artigos_publicados():
         from .models import Artigo
         return Artigo.objects.filter(Publicado=True).order_by('-DataPublicacao')
-
