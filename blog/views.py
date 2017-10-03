@@ -30,7 +30,9 @@ def pagina(request, slugpagina):
 def artigo(request, slugpagina, slugartigo):
     menu = Pagina.objects.itensmenu()
 
-    itemartigo = Artigo.objects.artigos_publicados().get(Pagina__Slug=slugpagina, Slug=slugartigo)
+    itemartigo = Artigo.objects.artigos_publicados().get(
+        Pagina__Slug=slugpagina,
+        Slug=slugartigo)
 
     paginaartigo = Pagina.objects.get(Slug=slugpagina)
 
