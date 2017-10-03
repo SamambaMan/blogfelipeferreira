@@ -38,5 +38,3 @@ def artigo(request, slugpagina, slugartigo):
                   {'menu':menu,
                    'artigo':itemartigo,
                    'rodapepagina':paginaartigo.RodapePagina})
-
-    
