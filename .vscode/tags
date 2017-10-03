@@ -9,67 +9,73 @@
 0003_artigo_detalhavel.py	../blog/migrations/0003_artigo_detalhavel.py	1;"	kind:file	line:1
 0004_auto_20170919_2204.py	../blog/migrations/0004_auto_20170919_2204.py	1;"	kind:file	line:1
 0005_auto_20170919_2253.py	../blog/migrations/0005_auto_20170919_2253.py	1;"	kind:file	line:1
-ALLOWED_HOSTS	../blogfelipeferreira/settings.py	/^ALLOWED_HOSTS = ['samambaman.webfactional.com','felipeferreira.xyz','localhost']$/;"	kind:variable	line:33
-AUTH_PASSWORD_VALIDATORS	../blogfelipeferreira/settings.py	/^AUTH_PASSWORD_VALIDATORS = [$/;"	kind:variable	line:109
-Artigo	../blog/models.py	/^class Artigo(models.Model):$/;"	kind:class	line:32
-BASE_DIR	../blogfelipeferreira/settings.py	/^BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))$/;"	kind:variable	line:20
+ALLOWED_HOSTS	../blogfelipeferreira/settings.py	/^    ALLOWED_HOSTS = ['*']$/;"	kind:variable	line:162
+ALLOWED_HOSTS	../blogfelipeferreira/settings.py	/^ALLOWED_HOSTS = ['samambaman.webfactional.com','felipeferreira.xyz','localhost']$/;"	kind:variable	line:34
+AUTH_PASSWORD_VALIDATORS	../blogfelipeferreira/settings.py	/^AUTH_PASSWORD_VALIDATORS = [$/;"	kind:variable	line:112
+Artigo	../blog/models.py	/^class Artigo(models.Model):$/;"	kind:class	line:34
+ArtigoManager	../blog/managers.py	/^class ArtigoManager(models.Manager):$/;"	kind:class	line:11
+BASE_DIR	../blogfelipeferreira/settings.py	/^BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))$/;"	kind:variable	line:21
 BlogConfig	../blog/apps.py	/^class BlogConfig(AppConfig):$/;"	kind:class	line:7
-Conteudo	../blog/models.py	/^    Conteudo = HTMLField(blank=True, null=True)$/;"	kind:variable	line:19
-Conteudo	../blog/models.py	/^    Conteudo = HTMLField(blank=True, null=True)$/;"	kind:variable	line:38
-DATABASES	../blogfelipeferreira/settings.py	/^DATABASES = {$/;"	kind:variable	line:98
-DEBUG	../blogfelipeferreira/settings.py	/^DEBUG = True$/;"	kind:variable	line:30
-DataPublicacao	../blog/models.py	/^    DataPublicacao = models.DateField(blank=True, null=True)$/;"	kind:variable	line:35
-Detalhavel	../blog/models.py	/^    Detalhavel = models.BooleanField(default=True)$/;"	kind:variable	line:40
-Home	../blog/models.py	/^    Home = models.BooleanField(default=False)$/;"	kind:variable	line:22
-INSTALLED_APPS	../blogfelipeferreira/settings.py	/^INSTALLED_APPS = [$/;"	kind:variable	line:37
-ImagemTopo	../blog/models.py	/^    ImagemTopo = models.FileField(blank=True, null=True)$/;"	kind:variable	line:18
-ImagemTopo	../blog/models.py	/^    ImagemTopo = models.FileField(blank=True, null=True)$/;"	kind:variable	line:37
-LANGUAGE_CODE	../blogfelipeferreira/settings.py	/^LANGUAGE_CODE = 'pt-br'$/;"	kind:variable	line:128
-MEDIA_ROOT	../blogfelipeferreira/settings.py	/^MEDIA_ROOT = BASE_DIR + '\/media\/'$/;"	kind:variable	line:145
-MEDIA_URL	../blogfelipeferreira/settings.py	/^MEDIA_URL = '\/media\/'$/;"	kind:variable	line:146
-MIDDLEWARE	../blogfelipeferreira/settings.py	/^MIDDLEWARE = [$/;"	kind:variable	line:63
-Meta	../blog/models.py	/^    class Meta(OrderedModel.Meta):$/;"	kind:class	line:24
+Conteudo	../blog/models.py	/^    Conteudo = HTMLField(blank=True, null=True)$/;"	kind:variable	line:20
+Conteudo	../blog/models.py	/^    Conteudo = HTMLField(blank=True, null=True)$/;"	kind:variable	line:40
+DATABASES	../blogfelipeferreira/settings.py	/^    DATABASES = {$/;"	kind:variable	line:158
+DATABASES	../blogfelipeferreira/settings.py	/^DATABASES = {$/;"	kind:variable	line:101
+DEBUG	../blogfelipeferreira/settings.py	/^DEBUG = True$/;"	kind:variable	line:31
+DataPublicacao	../blog/models.py	/^    DataPublicacao = models.DateField(blank=True, null=True)$/;"	kind:variable	line:37
+Detalhavel	../blog/models.py	/^    Detalhavel = models.BooleanField(default=True)$/;"	kind:variable	line:42
+Home	../blog/models.py	/^    Home = models.BooleanField(default=False)$/;"	kind:variable	line:23
+INSTALLED_APPS	../blogfelipeferreira/settings.py	/^INSTALLED_APPS = [$/;"	kind:variable	line:38
+ImagemTopo	../blog/models.py	/^    ImagemTopo = models.FileField(blank=True, null=True)$/;"	kind:variable	line:19
+ImagemTopo	../blog/models.py	/^    ImagemTopo = models.FileField(blank=True, null=True)$/;"	kind:variable	line:39
+InclusaoArtigoTest	../blog/tests.py	/^class InclusaoArtigoTest(TestCase):$/;"	kind:class	line:33
+InclusaoPaginaTest	../blog/tests.py	/^class InclusaoPaginaTest(TestCase):$/;"	kind:class	line:7
+LANGUAGE_CODE	../blogfelipeferreira/settings.py	/^LANGUAGE_CODE = 'pt-br'$/;"	kind:variable	line:131
+MEDIA_ROOT	../blogfelipeferreira/settings.py	/^MEDIA_ROOT = BASE_DIR + '\/media\/'$/;"	kind:variable	line:148
+MEDIA_URL	../blogfelipeferreira/settings.py	/^MEDIA_URL = '\/media\/'$/;"	kind:variable	line:149
+MIDDLEWARE	../blogfelipeferreira/settings.py	/^MIDDLEWARE = [$/;"	kind:variable	line:64
+Meta	../blog/models.py	/^    class Meta(OrderedModel.Meta):$/;"	kind:class	line:26
 Migration	../blog/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:11
 Migration	../blog/migrations/0002_artigo_publicado.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:8
 Migration	../blog/migrations/0003_artigo_detalhavel.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:8
 Migration	../blog/migrations/0004_auto_20170919_2204.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:8
 Migration	../blog/migrations/0005_auto_20170919_2253.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:8
-MostraMenu	../blog/models.py	/^    MostraMenu = models.BooleanField(default=False)$/;"	kind:variable	line:17
-NomeMenu	../blog/models.py	/^    NomeMenu = models.CharField(max_length=20)$/;"	kind:variable	line:16
-Pagina	../blog/models.py	/^    Pagina = models.ForeignKey('Pagina')$/;"	kind:variable	line:33
-Pagina	../blog/models.py	/^class Pagina(OrderedModel):$/;"	kind:class	line:11
+MostraMenu	../blog/models.py	/^    MostraMenu = models.BooleanField(default=False)$/;"	kind:variable	line:18
+NomeMenu	../blog/models.py	/^    NomeMenu = models.CharField(max_length=20)$/;"	kind:variable	line:17
+Pagina	../blog/models.py	/^    Pagina = models.ForeignKey('Pagina')$/;"	kind:variable	line:35
+Pagina	../blog/models.py	/^class Pagina(OrderedModel):$/;"	kind:class	line:12
 PaginaAdmin	../blog/admin.py	/^class PaginaAdmin(OrderedModelAdmin):$/;"	kind:class	line:9
 PaginaManager	../blog/managers.py	/^class PaginaManager(models.Manager):$/;"	kind:class	line:4
-Publicado	../blog/models.py	/^    Publicado = models.BooleanField(default=False)$/;"	kind:variable	line:39
-ROOT_URLCONF	../blogfelipeferreira/settings.py	/^ROOT_URLCONF = 'blogfelipeferreira.urls'$/;"	kind:variable	line:73
-RodapeGeral	../blog/models.py	/^    RodapeGeral = HTMLField(blank=True, null=True)$/;"	kind:variable	line:21
-RodapePagina	../blog/models.py	/^    RodapePagina = HTMLField(blank=True, null=True)$/;"	kind:variable	line:20
-SECRET_KEY	../blogfelipeferreira/settings.py	/^SECRET_KEY = '#9uvztc_nv23-s=+#!%k$-g^*7l0j%y-y6l2hl8i(@!tdi5#-4'$/;"	kind:variable	line:27
-STATICFILES_DIRS	../blogfelipeferreira/settings.py	/^STATICFILES_DIRS = ($/;"	kind:variable	line:149
-STATIC_ROOT	../blogfelipeferreira/settings.py	/^STATIC_ROOT = BASE_DIR + '\/static\/'$/;"	kind:variable	line:143
-STATIC_URL	../blogfelipeferreira/settings.py	/^STATIC_URL = '\/static\/'$/;"	kind:variable	line:142
-Slug	../blog/models.py	/^    Slug = AutoSlugField(populate_from='Titulo', unique=True)$/;"	kind:variable	line:15
-Slug	../blog/models.py	/^    Slug = AutoSlugField(populate_from='Titulo', unique=True)$/;"	kind:variable	line:36
-TEMPLATES	../blogfelipeferreira/settings.py	/^TEMPLATES = [$/;"	kind:variable	line:75
-TIME_ZONE	../blogfelipeferreira/settings.py	/^TIME_ZONE = 'UTC'$/;"	kind:variable	line:130
-TINYMCE_DEFAULT_CONFIG	../blogfelipeferreira/settings.py	/^TINYMCE_DEFAULT_CONFIG = {$/;"	kind:variable	line:50
-Titulo	../blog/models.py	/^    Titulo = models.CharField(max_length=100)$/;"	kind:variable	line:14
-Titulo	../blog/models.py	/^    Titulo = models.CharField(max_length=100)$/;"	kind:variable	line:34
-USE_I18N	../blogfelipeferreira/settings.py	/^USE_I18N = True$/;"	kind:variable	line:132
-USE_L10N	../blogfelipeferreira/settings.py	/^USE_L10N = True$/;"	kind:variable	line:134
-USE_TZ	../blogfelipeferreira/settings.py	/^USE_TZ = True$/;"	kind:variable	line:136
+Publicado	../blog/models.py	/^    Publicado = models.BooleanField(default=False)$/;"	kind:variable	line:41
+ROOT_URLCONF	../blogfelipeferreira/settings.py	/^ROOT_URLCONF = 'blogfelipeferreira.urls'$/;"	kind:variable	line:75
+RodapeGeral	../blog/models.py	/^    RodapeGeral = HTMLField(blank=True, null=True)$/;"	kind:variable	line:22
+RodapePagina	../blog/models.py	/^    RodapePagina = HTMLField(blank=True, null=True)$/;"	kind:variable	line:21
+SECRET_KEY	../blogfelipeferreira/settings.py	/^SECRET_KEY = '#9uvztc_nv23-s=+#!%k$-g^*7l0j%y-y6l2hl8i(@!tdi5#-4'$/;"	kind:variable	line:28
+STATICFILES_DIRS	../blogfelipeferreira/settings.py	/^STATICFILES_DIRS = ($/;"	kind:variable	line:152
+STATICFILES_STORAGE	../blogfelipeferreira/settings.py	/^STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'$/;"	kind:variable	line:95
+STATIC_ROOT	../blogfelipeferreira/settings.py	/^STATIC_ROOT = BASE_DIR + '\/static\/'$/;"	kind:variable	line:146
+STATIC_URL	../blogfelipeferreira/settings.py	/^STATIC_URL = '\/static\/'$/;"	kind:variable	line:145
+Slug	../blog/models.py	/^    Slug = AutoSlugField(populate_from='Titulo', unique=True)$/;"	kind:variable	line:16
+Slug	../blog/models.py	/^    Slug = AutoSlugField(populate_from='Titulo', unique=True)$/;"	kind:variable	line:38
+TEMPLATES	../blogfelipeferreira/settings.py	/^TEMPLATES = [$/;"	kind:variable	line:77
+TIME_ZONE	../blogfelipeferreira/settings.py	/^TIME_ZONE = 'UTC'$/;"	kind:variable	line:133
+TINYMCE_DEFAULT_CONFIG	../blogfelipeferreira/settings.py	/^TINYMCE_DEFAULT_CONFIG = {$/;"	kind:variable	line:51
+Titulo	../blog/models.py	/^    Titulo = models.CharField(max_length=100)$/;"	kind:variable	line:15
+Titulo	../blog/models.py	/^    Titulo = models.CharField(max_length=100)$/;"	kind:variable	line:36
+USE_I18N	../blogfelipeferreira/settings.py	/^USE_I18N = True$/;"	kind:variable	line:135
+USE_L10N	../blogfelipeferreira/settings.py	/^USE_L10N = True$/;"	kind:variable	line:137
+USE_TZ	../blogfelipeferreira/settings.py	/^USE_TZ = True$/;"	kind:variable	line:139
 UltimosArtigos	../blog/feed.py	/^class UltimosArtigos(Feed):$/;"	kind:class	line:8
-WSGI_APPLICATION	../blogfelipeferreira/settings.py	/^WSGI_APPLICATION = 'blogfelipeferreira.wsgi.application'$/;"	kind:variable	line:92
+WSGI_APPLICATION	../blogfelipeferreira/settings.py	/^WSGI_APPLICATION = 'blogfelipeferreira.wsgi.application'$/;"	kind:variable	line:94
 __init__.py	../blog/__init__.py	1;"	kind:file	line:1
 __init__.py	../blog/migrations/__init__.py	1;"	kind:file	line:1
 __init__.py	../blogfelipeferreira/__init__.py	1;"	kind:file	line:1
-__str__	../blog/models.py	/^    def __str__(self):$/;"	kind:member	line:27
-__str__	../blog/models.py	/^    def __str__(self):$/;"	kind:member	line:53
+__str__	../blog/models.py	/^    def __str__(self):$/;"	kind:member	line:29
+__str__	../blog/models.py	/^    def __str__(self):$/;"	kind:member	line:56
 admin.py	../blog/admin.py	1;"	kind:file	line:1
 application	../blogfelipeferreira/wsgi.py	/^application = get_wsgi_application()$/;"	kind:variable	line:16
 apps.py	../blog/apps.py	1;"	kind:file	line:1
-artigo	../blog/views.py	/^def artigo(request, slugpagina, slugartigo):$/;"	kind:function	line:31
-artigos_publicados	../blog/managers.py	/^    def artigos_publicados():$/;"	kind:member	line:11
+artigo	../blog/views.py	/^def artigo(request, slugpagina, slugartigo):$/;"	kind:function	line:30
+artigos_publicados	../blog/managers.py	/^    def artigos_publicados():$/;"	kind:member	line:13
 dependencies	../blog/migrations/0001_initial.py	/^    dependencies = [$/;"	kind:variable	line:15
 dependencies	../blog/migrations/0002_artigo_publicado.py	/^    dependencies = [$/;"	kind:variable	line:10
 dependencies	../blog/migrations/0003_artigo_detalhavel.py	/^    dependencies = [$/;"	kind:variable	line:10
@@ -83,7 +89,7 @@ field	../blog/migrations/0003_artigo_detalhavel.py	/^            field=models.Bo
 field	../blog/migrations/0004_auto_20170919_2204.py	/^            field=models.PositiveIntegerField(db_index=True, default=1, editable=False),$/;"	kind:variable	line:22
 fields	../blog/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:21
 fields	../blog/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:32
-index	../blog/views.py	/^def index(request):$/;"	kind:function	line:8
+index	../blog/views.py	/^def index(request):$/;"	kind:function	line:9
 initial	../blog/migrations/0001_initial.py	/^    initial = True$/;"	kind:variable	line:13
 item_description	../blog/feed.py	/^    def item_description(self, item):$/;"	kind:member	line:20
 item_link	../blog/feed.py	/^    def item_link(self, item):$/;"	kind:member	line:24
@@ -107,6 +113,8 @@ name	../blog/migrations/0002_artigo_publicado.py	/^            name='Publicado',
 name	../blog/migrations/0003_artigo_detalhavel.py	/^            name='Detalhavel',$/;"	kind:variable	line:17
 name	../blog/migrations/0004_auto_20170919_2204.py	/^            name='order',$/;"	kind:variable	line:21
 name	../blog/migrations/0004_auto_20170919_2204.py	/^            name='pagina',$/;"	kind:variable	line:16
+objects	../blog/models.py	/^    objects = ArtigoManager()$/;"	kind:variable	line:43
+objects	../blog/models.py	/^    objects = PaginaManager()$/;"	kind:variable	line:24
 operations	../blog/migrations/0001_initial.py	/^    operations = [$/;"	kind:variable	line:18
 operations	../blog/migrations/0002_artigo_publicado.py	/^    operations = [$/;"	kind:variable	line:14
 operations	../blog/migrations/0003_artigo_detalhavel.py	/^    operations = [$/;"	kind:variable	line:14
@@ -116,8 +124,12 @@ options	../blog/migrations/0004_auto_20170919_2204.py	/^            options={'or
 ordering	../blog/admin.py	/^    ordering = ('order',)$/;"	kind:variable	line:12
 pagina	../blog/views.py	/^def pagina(request, slugpagina):$/;"	kind:function	line:16
 preserve_default	../blog/migrations/0004_auto_20170919_2204.py	/^            preserve_default=False,$/;"	kind:variable	line:23
-save	../blog/models.py	/^    def save(self, *args, **kwargs):$/;"	kind:member	line:42
+save	../blog/models.py	/^    def save(self, *args, **kwargs):$/;"	kind:member	line:45
+setUp	../blog/tests.py	/^    def setUp(self):$/;"	kind:member	line:34
+setUp	../blog/tests.py	/^    def setUp(self):$/;"	kind:member	line:8
 settings.py	../blogfelipeferreira/settings.py	1;"	kind:file	line:1
+test_item_menu	../blog/tests.py	/^    def test_item_menu(self):$/;"	kind:member	line:27
+test_obter_artigo_publicado	../blog/tests.py	/^    def test_obter_artigo_publicado(self):$/;"	kind:member	line:54
 tests.py	../blog/tests.py	1;"	kind:file	line:1
 title	../blog/feed.py	/^    title = u"Últimos Artigos"$/;"	kind:variable	line:10
 urlpatterns	../blogfelipeferreira/urls.py	/^urlpatterns = [$/;"	kind:variable	line:23
