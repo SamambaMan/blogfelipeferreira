@@ -6,6 +6,7 @@ from django.db import models
 from tinymce.models import HTMLField
 from autoslug import AutoSlugField
 from ordered_model.models import OrderedModel
+from .managers import PaginaManager, ArtigoManager
 
 
 class Pagina(OrderedModel):
@@ -20,6 +21,7 @@ class Pagina(OrderedModel):
     RodapePagina = HTMLField(blank=True, null=True)
     RodapeGeral = HTMLField(blank=True, null=True)
     Home = models.BooleanField(default=False)
+    objects = PaginaManager()
 
     class Meta(OrderedModel.Meta):
         pass
@@ -38,6 +40,7 @@ class Artigo(models.Model):
     Conteudo = HTMLField(blank=True, null=True)
     Publicado = models.BooleanField(default=False)
     Detalhavel = models.BooleanField(default=True)
+    objects = ArtigoManager()
 
     def save(self, *args, **kwargs):
         from datetime import datetime

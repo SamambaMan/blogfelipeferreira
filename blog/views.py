@@ -2,33 +2,24 @@
 from __future__ import unicode_literals
 
 from django.shortcuts import render
+from .models import Pagina, Artigo
 
 # Create your views here.
 
-def artigos_publicados():
-    from .models import Artigo
-    return Artigo.objects.filter(Publicado=True).order_by('-DataPublicacao')
-
-def itensmenu():
-    from .models import Pagina
-    return Pagina.objects.filter(MostraMenu=True).order_by('order')
-
 def index(request):
+    menu = Pagina.objects.itensmenu()
 
-    menu = itensmenu()
-
-    artigos = artigos_publicados()
+    artigos = Artigo.objects.artigos_publicados()
 
     return render(request, 'blog/index.html', {'menu':menu, 'artigos':artigos})
 
 def pagina(request, slugpagina):
-    from .models import Pagina
 
-    menu = itensmenu()
+    menu = Pagina.objects.itensmenu()
 
     paginaatual = Pagina.objects.get(Slug=slugpagina)
 
-    artigos = artigos_publicados().filter(Pagina=paginaatual)
+    artigos = Artigo.objects.artigos_publicados().filter(Pagina=paginaatual)
 
     return render(request, 'blog/pagina.html',
                   {'menu':menu,
@@ -37,23 +28,15 @@ def pagina(request, slugpagina):
 
 
 def artigo(request, slugpagina, slugartigo):
-    from .models import Pagina
+    menu = Pagina.objects.itensmenu()
 
-    menu = itensmenu()
+    itemartigo = Artigo.objects.artigos_publicados().get(Pagina__Slug=slugpagina, Slug=slugartigo)
 
-    itemartigo = artigos_publicados().get(Pagina__Slug=slugpagina, Slug=slugartigo)
-
-    pagina = Pagina.objects.get(Slug=slugpagina)
-
-
+    paginaartigo = Pagina.objects.get(Slug=slugpagina)
 
     return render(request, 'blog/artigo.html',
                   {'menu':menu,
                    'artigo':itemartigo,
-                   'rodapepagina':pagina.RodapePagina})
+                   'rodapepagina':paginaartigo.RodapePagina})
 
-def teste(request):
-    print request.body
-
-    return True
     
